@@ -1,4 +1,4 @@
-[Source](https://stackoverflow.com/a/38516572)
+[How do I add python3 kernel to jupyter (IPython)](https://stackoverflow.com/a/38516572)
 
 ```
 sudo pip install --upgrade pip
