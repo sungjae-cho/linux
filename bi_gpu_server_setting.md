@@ -61,19 +61,14 @@ export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-## 3.3. Install the lastest `tensorflow-gpu`
+## 3.3. Install `tensorflow-gpu` in version 1.4.1
+Version 1.4.1 is the lastest version of 1.4.
 ```
-sudo pip install --upgrade tensorflow-gpu  # for Python 2.7 and GPU
-sudo pip3 install --upgrade tensorflow-gpu # for Python 3.n and GPU
-```
-
-## 3.4. Install `tensorflow-gpu` in version 1.4
-```
-sudo pip install tensorflow-gpu==1.4
-sudo pip3 install tensorflow-gpu==1.4
+sudo pip install tensorflow-gpu==1.4.1
+sudo pip3 install tensorflow-gpu==1.4.1
 ```
 
-## 3.5. Check
+## 3.4. Check
 ```
 python
 >>> import tensorflow as tf
