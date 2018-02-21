@@ -67,6 +67,8 @@ Version 1.4.1 is the lastest version of 1.4.
 sudo pip install tensorflow-gpu==1.4.1
 sudo pip3 install tensorflow-gpu==1.4.1
 ```
+[Source](https://pypi.python.org/pypi/tensorflow-gpu/1.4.1)
+There is no address with https://pypi.python.org/pypi/tensorflow-gpu/1.4.2
 
 ## 3.4. Check
 ```
