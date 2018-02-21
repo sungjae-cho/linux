@@ -44,13 +44,7 @@ sudo python3 -m ipykernel install --user
 
 # 3. Install Tensorflow
 
-## 3.1. Set environment variables for CUDA 8.0
-```
-export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-```
-
-## 3.2. Install cuDNN v6.0
+## 3.1. Install cuDNN v6.0
 Install cuDNN v6.0 for installing Tensorflow 1.4.
 ```
 CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
@@ -59,6 +53,12 @@ tar -xzvf ${CUDNN_TAR_FILE}
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
 sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
+```
+
+## 3.2. Set environment variables for CUDA 8.0
+```
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 ## 3.3. Install the lastest `tensorflow-gpu`
