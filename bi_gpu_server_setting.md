@@ -20,10 +20,12 @@ sudo apt-get install python3-pip   # python 3
 Installing Jupyter with `pip`.
 If you have Python 3 installed (which we recommended):
 ```
+python3 -m pip install --upgrade pip
 sudo python3 -m pip install jupyter
 ```
 If you have Python 2 installed:
 ```
+python -m pip install --upgrade pip
 sudo python -m pip install jupyter
 ```
 ## 2.3. Install or update `ipython`.
