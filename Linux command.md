@@ -46,7 +46,8 @@ sudo pip3 install tensorflow-gpu==1.2
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
-# Install cuDNN
+# Install cuDNN v6.0
+Install cuDNN v6.0 for installing Tensorflow 1.4.
 ```
 # install cuDNN v6.0
 CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
