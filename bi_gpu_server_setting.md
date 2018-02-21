@@ -56,3 +56,15 @@ sudo pip3 install --upgrade tensorflow-gpu # for Python 3.n and GPU
 sudo pip install tensorflow-gpu==1.4
 sudo pip3 install tensorflow-gpu==1.4
 ```
+
+## 3.5. Check
+```
+python
+>>> import tensorflow as tf
+>>> tf.__version__
+```
+```
+python3
+>>> import tensorflow as tf
+>>> tf.__version__
+```
