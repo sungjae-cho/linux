@@ -16,6 +16,7 @@ sudo apt-get install python3-pip   # python 3
 
 # 2. Install Juypter
 
+# 2.1. Install Juypter
 Installing Jupyter with `pip`.
 If you have Python 3 installed (which we recommended):
 ```
@@ -24,6 +25,14 @@ sudo python3 -m pip install jupyter
 If you have Python 2 installed:
 ```
 sudo python -m pip install jupyter
+```
+
+# 2.2. Make Python 2 and Python 3 available in Jupyter
+```
+sudo python2 -m pip install -U ipykernel
+sudo python2 -m ipykernel install --user
+sudo python3 -m pip install -U ipykernel
+sudo python3 -m ipykernel install --user
 ```
 
 # 3. Install Tensorflow
