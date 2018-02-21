@@ -39,13 +39,16 @@ nvidia-smi
 ```
 # Install Tensorflow.
 ```
-sudo pip3 install tensorflow-gpu==1.2
+sudo pip install tensorflow-gpu==1.4
+sudo pip3 install tensorflow-gpu==1.4
 ```
 # Set environment variables for CUDA 8.0
 ```
 export PATH=/usr/local/cuda-8.0/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 ```
+[Source](https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45)
+
 # Install cuDNN v6.0
 Install cuDNN v6.0 for installing Tensorflow 1.4.
 ```
@@ -57,3 +60,4 @@ sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
 sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 ```
+[Source](https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45)
