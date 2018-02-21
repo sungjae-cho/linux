@@ -26,6 +26,11 @@ If you have Python 2 installed:
 ```
 sudo python -m pip install jupyter
 ```
+# 2.3. Install or update `ipython`.
+```
+sudo apt-get install ipython2
+sudo apt-get install ipython3
+```
 
 # 2.2. Make Python 2 and Python 3 available in Jupyter
 ```
