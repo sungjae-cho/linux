@@ -46,8 +46,8 @@ sudo python3 -m ipykernel install --user
 
 ## 3.1. Set environment variables for CUDA 8.0
 ```
-export PATH=/usr/local/cuda-8.0/bin
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 ## 3.2. Install cuDNN v6.0
