@@ -1,6 +1,6 @@
 # To install
 * Install Jupyter notebook.
-* Tensorflow 1.4.0 of Python 2 and Python 3.
+* Tensorflow 1.4.1 of Python 2 and Python 3.
 
 # 1. Basic commands
 ## 1.1. Update the `apt-get` package.
