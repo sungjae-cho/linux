@@ -29,7 +29,30 @@ python -m pip install jupyter
 ```
 nvcc --version
 ```
+# Check cuDNN version
+```
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
 # Check the usage of GPU devices.
 ```
 nvidia-smi
+```
+# Install Tensorflow.
+```
+sudo pip3 install tensorflow-gpu==1.2
+```
+# Set environment variables for CUDA 8.0
+```
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+# Install cuDNN
+```
+# install cuDNN v6.0
+CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
+wget http://developer.download.nvidia.com/compute/redist/cudnn/v6.0/${CUDNN_TAR_FILE}
+tar -xzvf ${CUDNN_TAR_FILE}
+sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
+sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
+sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 ```
