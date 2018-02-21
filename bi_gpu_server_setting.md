@@ -3,12 +3,12 @@
 * Tensorflow 1.4.0 of Python 2 and Python 3.
 
 # 1. Basic commands
-## Update the `apt-get` package.
+## 1.1. Update the `apt-get` package.
 ```
 sudo apt-get update
 ```
 
-## Install or update `pip` and `pip3`.
+## 1.2. Install or update `pip` and `pip3`.
 ```
 sudo apt-get install python-pip	  # python 2
 sudo apt-get install python3-pip   # python 3
@@ -16,7 +16,7 @@ sudo apt-get install python3-pip   # python 3
 
 # 2. Install Juypter
 
-# 2.1. Install Juypter
+## 2.1. Install Juypter
 Installing Jupyter with `pip`.
 If you have Python 3 installed (which we recommended):
 ```
@@ -26,13 +26,13 @@ If you have Python 2 installed:
 ```
 sudo python -m pip install jupyter
 ```
-# 2.3. Install or update `ipython`.
+## 2.3. Install or update `ipython`.
 ```
 sudo apt-get install ipython2
 sudo apt-get install ipython3
 ```
 
-# 2.2. Make Python 2 and Python 3 available in Jupyter
+## 2.2. Make Python 2 and Python 3 available in Jupyter
 ```
 sudo python2 -m pip install -U ipykernel
 sudo python2 -m ipykernel install --user
