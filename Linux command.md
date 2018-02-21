@@ -43,8 +43,8 @@ sudo pip3 install tensorflow-gpu==1.2
 ```
 # Set environment variables for CUDA 8.0
 ```
-export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-8.0/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 ```
 # Install cuDNN v6.0
 Install cuDNN v6.0 for installing Tensorflow 1.4.
