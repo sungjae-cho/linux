@@ -25,6 +25,13 @@ If you have Python 2 installed:
 python -m pip install --upgrade pip
 python -m pip install jupyter
 ```
+
+# Uninstall Jupyter
+```
+pip install pip-autoremove
+pip-autoremove jupyter -y
+```
+
 # Check CUDA version.
 ```
 nvcc --version
