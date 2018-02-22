@@ -1,4 +1,4 @@
-# Copy files between dockers
+# Copy a directory between dockers
 ```
 scp -P <dest_docker_ssh_port> -r <src_dir_to_cp> <dest_docker_ip>:<dest_dir_to_cpy>
 ```
