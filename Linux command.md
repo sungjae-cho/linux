@@ -68,3 +68,8 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
 sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 ```
 [Source](https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45)
+
+# How do I get the size of a directory on the command line?
+```
+du -sh <directory_path>
+```
