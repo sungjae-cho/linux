@@ -76,6 +76,6 @@ du -sh <directory_path>
 
 # How do I extract a tar.gz or .tgz file?
 ```
-tar xvzf file.tar.gz
-tar xvzf file.tgz
+tar xvzf <file>.tar.gz
+tar xvzf <file>.tgz
 ```
