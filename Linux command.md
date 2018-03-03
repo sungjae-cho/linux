@@ -73,3 +73,9 @@ sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 ```
 du -sh <directory_path>
 ```
+
+# How do I extract a tar.gz or .tgz file?
+```
+tar xvzf file.tar.gz
+tar xvzf file.tgz
+```
