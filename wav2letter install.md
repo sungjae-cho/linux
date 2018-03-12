@@ -106,3 +106,28 @@ make: *** [all] Error 2
 
 Error: Build error: Failed building.
 ```
+
+I think NCCL is required.
+So, I installed NCCL based on [this page](http://docs.nvidia.com/deeplearning/sdk/nccl-install-guide/index.html#down).
+You can download NCCL from [this page](https://developer.nvidia.com/nccl/nccl-download) after you register the page with your email.
+Because my CUDA and Ubuntu versions are 8.0 and 14.04, I downloaded 'NCCL 2.1.15 for Ubuntu 14.04 and CUDA 8', which is a local version.
+Then, download file. Then, I got the file `nccl-repo-ubuntu1404-2.1.15-ga-cuda8.0_1-1_amd64.deb`.
+Then, install the file.
+```
+sudo dpkg -i nccl-repo-ubuntu1404-2.1.15-ga-cuda8.0_1-1_amd64.deb
+```
+Then, update `apt-get`.
+```
+sudo apt update
+```
+Then, install `libnccl2` and `libnccl-dev`.
+```
+sudo apt install libnccl2 libnccl-dev
+```
+Now the installation of NCCL is over.
+
+Then, try again the following command for installing TorchMPI.
+```
+MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
+```
+I got a success result.
