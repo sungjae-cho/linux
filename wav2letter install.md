@@ -158,10 +158,41 @@ CMake Error at /usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake:
 ```
 I should have install FFTW library.
 
+Download the tar of the FFTW library.
+```sh
+wget ftp://ftp.fftw.org/pub/fftw/fftw-3.3.7.tar.gz
+```
 
+Unzip the file.
+```sh
+tar xvzf .tar.gz
+```
+
+Compile and install the FFTW library.
+```sh
+cd fftw-3.3.7
+./configure
+make
+make install
+```
+Successful!
+
+Then, try again the command I met the error.
+```sh
+cd ~/wav2letter
+cd gtn && luarocks make rocks/gtn-scm-1.rockspec && cd ..
+```
+Successful!
 
 ```sh
 cd speech && luarocks make rocks/speech-scm-1.rockspec && cd ..
+```
+I got the following error.
+```sh
+CMake Error at /usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake:108 (message):
+  Could NOT find FFTW (missing: FFTW_LIBRARIES)
+
+```
 cd torchnet-optim && luarocks make rocks/torchnet-optim-scm-1.rockspec && cd ..
 cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
 # Assuming here you got KenLM in $HOME/kenlm
