@@ -79,3 +79,8 @@ du -sh <directory_path>
 tar xvzf <file>.tar.gz
 tar xvzf <file>.tgz
 ```
+
+# Refresh `.bashrc`
+```sh
+source $HOME/.bashrc
+```
