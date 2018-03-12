@@ -79,7 +79,7 @@ Install TorchMPI.
 MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
 ```
 
-I met the erro like the following.
+I met the error like the following.
 ```sh
 /tmp/luarocks_torchmpi-scm-1-6079/TorchMPI/lib/detail/reduce_kernel.cu:1:17: fatal error: THC.h: No such file or directory
 ```
