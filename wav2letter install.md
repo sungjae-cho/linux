@@ -203,9 +203,18 @@ Then, try again the commands I met.
 cd ~/wav2letter
 cd speech && luarocks make rocks/speech-scm-1.rockspec && cd ..
 ```
-
+Then, proceed the last commands.
+```sh
 cd torchnet-optim && luarocks make rocks/torchnet-optim-scm-1.rockspec && cd ..
+```
+
+Then, try the following.
+```sh
 cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
+```
+I got an error related to sndfile.
+
+```sh
 # Assuming here you got KenLM in $HOME/kenlm
 # And only if you plan to use the decoder:
 cd beamer && KENLM_INC=$HOME/kenlm luarocks make rocks/beamer-scm-1.rockspec && cd ..
