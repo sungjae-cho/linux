@@ -88,3 +88,21 @@ Based on [this article](https://github.com/torch/cunn/issues/407), install `cuTo
 ```
 luarocks install cutorch
 ```
+
+Then, enter the following.
+```
+MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
+```
+
+Error messages
+```sh
+pp.o
+Linking CXX shared module libtorchmpi.so
+/usr/bin/ld: cannot find -lnccl_static
+collect2: error: ld returned 1 exit status
+make[2]: *** [lib/libtorchmpi.so] Error 1
+make[1]: *** [lib/CMakeFiles/torchmpi.dir/all] Error 2
+make: *** [all] Error 2
+
+Error: Build error: Failed building.
+```
