@@ -213,6 +213,25 @@ Then, try the following.
 cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
 ```
 I got an error related to sndfile.
+Then, install sndfile.
+The following command is found [here](https://stackoverflow.com/questions/44910504/trying-to-install-libsndfile-on-ubuntu-16).
+```sh
+apt-get install libsndfile-dev
+```
+Try again.
+```sh
+cd ~/wav2letter
+cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
+```
+No error occurred.
+
+Try the following.
+```sh
+cd beamer && KENLM_INC=$HOME/kenlm luarocks make rocks/beamer-scm-1.rockspec && cd ..
+```
+No error.
+
+
 
 ```sh
 # Assuming here you got KenLM in $HOME/kenlm
