@@ -63,3 +63,23 @@ make install
 cp -a lib/* ~/usr/lib # libs are not installed by default :(
 cd ../..
 ```
+
+Install OpenMPI.
+```sh
+wget https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.2.tar.bz2
+tar xfj openmpi-2.1.2.tar.bz2
+cd openmpi-2.1.2; mkdir build; cd build
+../configure --prefix=$HOME/usr --enable-mpi-cxx --enable-shared --with-slurm --enable-mpi-thread-multiple --enable-mpi-ext=affinity,cuda --with-cuda=/usr/local/cuda
+make -j 20 all
+make install
+```
+
+Install TorchMPI.
+```sh
+MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
+```
+
+I met the erro like the following.
+```sh
+/tmp/luarocks_torchmpi-scm-1-6079/TorchMPI/lib/detail/reduce_kernel.cu:1:17: fatal error: THC.h: No such file or directory
+```
