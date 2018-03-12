@@ -185,14 +185,25 @@ cd gtn && luarocks make rocks/gtn-scm-1.rockspec && cd ..
 Successful!
 
 ```sh
+cd ~/wav2letter
 cd speech && luarocks make rocks/speech-scm-1.rockspec && cd ..
 ```
 I got the following error.
 ```sh
 CMake Error at /usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake:108 (message):
   Could NOT find FFTW (missing: FFTW_LIBRARIES)
-
 ```
+Try the following commands to install the FFTW library.
+```sh
+sudo apt-get install libfftw3-3
+sudo apt-get install libfftw3-dev
+```
+Then, try again the commands I met.
+```sh
+cd ~/wav2letter
+cd speech && luarocks make rocks/speech-scm-1.rockspec && cd ..
+```
+
 cd torchnet-optim && luarocks make rocks/torchnet-optim-scm-1.rockspec && cd ..
 cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
 # Assuming here you got KenLM in $HOME/kenlm
