@@ -231,10 +231,41 @@ cd beamer && KENLM_INC=$HOME/kenlm luarocks make rocks/beamer-scm-1.rockspec && 
 ```
 No error.
 
+## Training wav2letter models
 
+### Data pre-processing
 
 ```sh
-# Assuming here you got KenLM in $HOME/kenlm
-# And only if you plan to use the decoder:
-cd beamer && KENLM_INC=$HOME/kenlm luarocks make rocks/beamer-scm-1.rockspec && cd ..
+cd ~
+wget http://www.openslr.org/resources/12/dev-clean.tar.gz
+tar xfvz dev-clean.tar.gz
+```
+
+```sh
+# repeat for train-clean-100, train-clean-360, train-other-500, dev-other, test-clean, test-other
+luajit ~/wav2letter/data/librispeech/create.lua ~/LibriSpeech ~/librispeech-proc
+```
+I met the following error.
+```sh
+luajit: /root/wav2letter/data/librispeech/create.lua:11: module 'torchnet' not found:
+        no field package.preload['torchnet']
+        no file '/root/.luarocks/share/lua/5.1/torchnet.lua'
+        no file '/root/.luarocks/share/lua/5.1/torchnet/init.lua'
+        no file '/root/torch/install/share/lua/5.1/torchnet.lua'
+        no file '/root/torch/install/share/lua/5.1/torchnet/init.lua'
+        no file './torchnet.lua'
+        no file '/root/torch/install/share/luajit-2.1.0-beta1/torchnet.lua'
+        no file '/usr/local/share/lua/5.1/torchnet.lua'
+        no file '/usr/local/share/lua/5.1/torchnet/init.lua'
+        no file '/root/torch/install/lib/torchnet.so'
+        no file '/root/.luarocks/lib/lua/5.1/torchnet.so'
+        no file '/root/torch/install/lib/lua/5.1/torchnet.so'
+        no file './torchnet.so'
+        no file '/usr/local/lib/lua/5.1/torchnet.so'
+        no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+        [C]: in function 'require'
+        /root/wav2letter/data/librispeech/create.lua:11: in main chunk
+        [C]: at 0x00406280
+
 ```
