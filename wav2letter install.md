@@ -132,4 +132,13 @@ MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
 ```
 I got a success result.
 
-##Torch and other Torch packages
+## Torch and other Torch packages
+Install Torch and other Torch packages.
+
+```sh
+luarocks install torch
+luarocks install cudnn # for GPU support
+luarocks install cunn # for GPU support
+```
+The results of the three lines were all successful.
+
