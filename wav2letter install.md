@@ -34,7 +34,7 @@ source $HOME/.bashrc
 ```
 
 Install LuaJIT + LuaRocks.
-```
+```sh
 git clone https://github.com/torch/luajit-rocks.git
 cd luajit-rocks
 mkdir build; cd build
@@ -44,3 +44,22 @@ make install
 cd ../..
 ```
 
+KenLM Language Model Toolkit
+KenLM requires Boost.
+Install Boost.
+```sh
+sudo apt-get install libboost-dev libboost-system-dev libboost-thread-dev libboost-test-dev
+```
+
+Install KenLM.
+```sh
+wget https://kheafield.com/code/kenlm.tar.gz
+tar xfvz kenlm.tar.gz
+cd kenlm
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/usr -DCMAKE_POSITION_INDEPENDENT_CODE=ON
+make -j 4
+make install
+cp -a lib/* ~/usr/lib # libs are not installed by default :(
+cd ../..
+```
