@@ -269,3 +269,8 @@ stack traceback:
         [C]: at 0x00406280
 
 ```
+After
+```sh
+luarocks install torchnet
+```
+, I got the same result.
