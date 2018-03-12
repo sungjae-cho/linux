@@ -131,3 +131,5 @@ Then, try again the following command for installing TorchMPI.
 MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
 ```
 I got a success result.
+
+##Torch and other Torch packages
