@@ -29,7 +29,7 @@ export CMAKE_INCLUDE_PATH=$CMAKE_INCLUDE_PATH:$MKL_INC_DIR
 ```
 
 Type the following to update `.bashrc` to the terminal.
-```
+```sh
 source $HOME/.bashrc
 ```
 
@@ -85,12 +85,12 @@ I met the error like the following.
 ```
 
 Based on [this article](https://github.com/torch/cunn/issues/407), install `cuTorch`.
-```
+```sh
 luarocks install cutorch
 ```
 
 Then, enter the following.
-```
+```sh
 MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
 ```
 
@@ -113,21 +113,21 @@ You can download NCCL from [this page](https://developer.nvidia.com/nccl/nccl-do
 Because my CUDA and Ubuntu versions are 8.0 and 14.04, I downloaded 'NCCL 2.1.15 for Ubuntu 14.04 and CUDA 8', which is a local version.
 Then, download file. Then, I got the file `nccl-repo-ubuntu1404-2.1.15-ga-cuda8.0_1-1_amd64.deb`.
 Then, install the file.
-```
+```sh
 sudo dpkg -i nccl-repo-ubuntu1404-2.1.15-ga-cuda8.0_1-1_amd64.deb
 ```
 Then, update `apt-get`.
-```
+```sh
 sudo apt update
 ```
 Then, install `libnccl2` and `libnccl-dev`.
-```
+```sh
 sudo apt install libnccl2 libnccl-dev
 ```
 Now the installation of NCCL is over.
 
 Then, try again the following command for installing TorchMPI.
-```
+```sh
 MPI_CXX_COMPILER=$HOME/usr/bin/mpicxx ~/usr/bin/luarocks install torchmpi
 ```
 I got a success result.
