@@ -83,3 +83,8 @@ I met the error like the following.
 ```sh
 /tmp/luarocks_torchmpi-scm-1-6079/TorchMPI/lib/detail/reduce_kernel.cu:1:17: fatal error: THC.h: No such file or directory
 ```
+
+Based on [this article](https://github.com/torch/cunn/issues/407), install `cuTorch`.
+```
+luarocks install cutorch
+```
