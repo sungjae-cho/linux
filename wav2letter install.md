@@ -142,3 +142,29 @@ luarocks install cunn # for GPU support
 ```
 The results of the three lines were all successful.
 
+## wav2letter packages
+```sh
+cd ~
+git clone https://github.com/facebookresearch/wav2letter.git
+cd wav2letter
+```
+```sh
+cd gtn && luarocks make rocks/gtn-scm-1.rockspec && cd ..
+```
+I met the follwing error message.
+```sh
+CMake Error at /usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake:      108 (message):
+  Could NOT find FFTW (missing: FFTW_INCLUDES FFTW_LIBRARIES)
+```
+I should have install FFTW library.
+
+
+
+```sh
+cd speech && luarocks make rocks/speech-scm-1.rockspec && cd ..
+cd torchnet-optim && luarocks make rocks/torchnet-optim-scm-1.rockspec && cd ..
+cd wav2letter && luarocks make rocks/wav2letter-scm-1.rockspec && cd ..
+# Assuming here you got KenLM in $HOME/kenlm
+# And only if you plan to use the decoder:
+cd beamer && KENLM_INC=$HOME/kenlm luarocks make rocks/beamer-scm-1.rockspec && cd ..
+```
