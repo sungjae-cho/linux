@@ -364,4 +364,5 @@ make install
 Install `cutorch`, `torchnet`.
 ```
 ~/usr/bin/luarocks install cutorch
+~/usr/bin/luarocks install torchnet
 ```
