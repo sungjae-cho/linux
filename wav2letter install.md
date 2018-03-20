@@ -366,3 +366,13 @@ Install `cutorch`, `torchnet`.
 ~/usr/bin/luarocks install cutorch
 ~/usr/bin/luarocks install torchnet
 ```
+
+I got this error.
+```
+Linking CXX shared module libtorchmpi.so
+/usr/bin/ld: cannot find -lnccl_static
+collect2: error: ld returned 1 exit status
+make[2]: *** [lib/libtorchmpi.so] Error 1
+make[1]: *** [lib/CMakeFiles/torchmpi.dir/all] Error 2
+make: *** [all] Error 2
+```
