@@ -165,7 +165,7 @@ wget ftp://ftp.fftw.org/pub/fftw/fftw-3.3.7.tar.gz
 
 Unzip the file.
 ```sh
-tar xvzf .tar.gz
+tar xvzf fftw-3.3.7.tar.gz
 ```
 
 Compile and install the FFTW library.
