@@ -13,6 +13,11 @@ Install `pip` or `pip3`.
 apt-get install python-pip	#python 2
 apt-get install python3-pip #pytohn 3
 ```
+Upgrade `pip` or `pip3`
+```
+sudo -H pip3 install --upgrade pip
+sudo -H pip2 install --upgrade pip
+```
 # Installing Jupyter
 Installing Jupyter with `pip`.
 If you have Python 3 installed (which we recommended):
