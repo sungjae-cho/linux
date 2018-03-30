@@ -10,8 +10,8 @@ sudo apt-get update
 ```
 Install `pip` or `pip3`.
 ```
-apt-get install python-pip	#python 2
-apt-get install python3-pip #pytohn 3
+sudo apt-get install python-pip	#python 2
+sudo apt-get install python3-pip #pytohn 3
 ```
 Upgrade `pip` or `pip3`
 ```
@@ -22,19 +22,19 @@ sudo -H pip3 install --upgrade pip #pytohn 3
 Installing Jupyter with `pip`.
 If you have Python 3 installed (which we recommended):
 ```
-python3 -m pip install --upgrade pip
-python3 -m pip install jupyter
+sudo python3 -m pip install --upgrade pip
+sudo python3 -m pip install jupyter
 ```
 If you have Python 2 installed:
 ```
-python -m pip install --upgrade pip
-python -m pip install jupyter
+sudo python -m pip install --upgrade pip
+sudo python -m pip install jupyter
 ```
 
 # Uninstall Jupyter
 ```
-pip install pip-autoremove
-pip-autoremove jupyter -y
+sudo pip install pip-autoremove
+sudo pip-autoremove jupyter -y
 ```
 
 # Check CUDA version.
