@@ -8,7 +8,8 @@ Debian packages named as `*.deb` are manually installed via the `dpkg` command (
 ```
 sudo apt-get install -f
 ```
-I think this command may install applications forcefully.
+`sudo apt-get install -f` command tries to fix this broken package by installing the missing dependency.
+Source: https://unix.stackexchange.com/a/159114
 
 ## Install a package
 ```
