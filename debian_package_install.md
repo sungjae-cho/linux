@@ -4,6 +4,12 @@ https://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-comman
 
 Debian packages named as `*.deb` are manually installed via the `dpkg` command (Debian Package Management System).
 
+## Before using `sudo dpkg -i`
+```
+sudo apt-get install -f
+```
+I think this command may install applications forcefully.
+
 ## Install a package
 ```
 sudo dpkg -i DEB_PACKAGE
