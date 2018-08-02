@@ -7,5 +7,6 @@ sudo pip3 install jupyterlab
 
 # Execute jupyter lab
 ```
-jupyter lab
+jupyter lab # case 1: without root permission
+sudo juypter lab --allow-root # case 2: with root permission
 ```
