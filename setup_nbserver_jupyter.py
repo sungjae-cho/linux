@@ -1,3 +1,6 @@
+'''
+If notebook does not get connected, it may be that your port is already occupied.
+'''
 import os
 import sys
  
