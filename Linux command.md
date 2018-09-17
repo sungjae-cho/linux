@@ -43,7 +43,7 @@ nvcc --version
 ```
 # Check cuDNN version
 ```bash
-cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2D
 ```
 # Check the usage of GPU devices.
 ```
