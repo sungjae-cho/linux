@@ -61,16 +61,11 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 ```
 [Source](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions)
 
-# Install cuDNN v6.0
-Install cuDNN v6.0 for installing Tensorflow 1.4.
+# Install cuDNN v7.2
+Install cuDNN v7.2 for installing Tensorflow 1.7.
+Download `cuDNN v7.2.1 Runtime Library for Ubuntu16.04 (Deb)` from [this page](https://developer.nvidia.com/cudnn).
 ```
-# install cuDNN v6.0
-CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
-wget http://developer.download.nvidia.com/compute/redist/cudnn/v6.0/${CUDNN_TAR_FILE}
-tar -xzvf ${CUDNN_TAR_FILE}
-sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
-sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
-sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
+sudo dpkg -i libcudnn7_7.2.1.38-1+cuda9.2_amd64.deb
 ```
 [Source](https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45)
 
