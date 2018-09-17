@@ -11,6 +11,9 @@ sudo pip3 install --upgrade pip
 # Install multiple packages
 1. Make a txt file named `requirements.txt`.
 2. Fill in the txt file as the following.
+  * If you need an exact version of `tensorflow`, `tensorflow==1.7.0`.
+  * If you need a higher or lower version of `tensorflow`, `tensorflow>=1.7.0` or `tensorflow<=1.7.0`.
+  * If you need a latest version of `tensorflow`, `tensorflow`.
 ```txt
 numpy==1.14.2
 atari-py==0.1.1
