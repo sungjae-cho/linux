@@ -6,6 +6,14 @@ nvcc --version
 ```bash
 cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2D
 ```
+# Install CUDA 9.0
+1. Download a deb install file from the NVIDA homepage.
+```bash
+sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda
+```
 
 # Set environment variables for CUDA 9.0
 ```bash
