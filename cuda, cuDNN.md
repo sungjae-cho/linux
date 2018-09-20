@@ -44,7 +44,7 @@ Install the CUDA 9.0 Samples?
 
 2. Set the enviroment variables `PATH` and `LD_LIBRARY_PATH`.
 
-**Method 1: Setting for a user environment**
+**Method 1: Setting for a user environment (Recommended!)**
 
 * Type `vim ~/.bashrc`. Add the following in the end of the file.
 
@@ -55,7 +55,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 
 * Type `vim ~/.bash_profile`. Add `source ~/.bashrc`.
 
-**Method 2: Setting in the Shell environment (Recommended!)**
+**Method 2: Setting in the Shell environment**
 
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
