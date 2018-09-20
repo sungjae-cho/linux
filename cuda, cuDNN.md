@@ -46,7 +46,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 ```
 * Type `vim ~/.bash_profile`. Add `source ~/.bashrc`.
 
-**Method 2: Setting in the Shell environment**
+**Method 2: Setting in the Shell environment (Recommended!)**
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
