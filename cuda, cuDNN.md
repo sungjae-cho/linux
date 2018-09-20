@@ -15,6 +15,27 @@ sudo sh cuda_9.0.176_384.81_linux.run
 ```
 While running the file, you are asked to install the NVIDIA driver, CUDA toolkit, and example codes. The example codes are just optional. If you already installed a recent NVIDIA driver, the CUDA toolkit is the only thing you should install. Pick the default choices while running.
 
+```bash
+Do you accept the previously read EULA?
+accept/decline/quit: accept
+
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?
+(y)es/(n)o/(q)uit: n
+
+Install the CUDA 9.0 Toolkit?
+(y)es/(n)o/(q)uit: y
+
+Enter Toolkit Location
+ [ default is /usr/local/cuda-9.0 ]:
+
+Do you want to install a symbolic link at /usr/local/cuda?
+(y)es/(n)o/(q)uit: y
+
+Install the CUDA 9.0 Samples?
+(y)es/(n)o/(q)uit: n
+
+```
+
 2. Add the CUDA binary directory to the enviroment variable `PATH`.
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
