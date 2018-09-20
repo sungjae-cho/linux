@@ -1,18 +1,25 @@
 # Check CUDA version.
+
 ```bash
 nvcc --version
 ```
+
 # Check cuDNN version
+
 ```bash
 cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2D
 ```
+
 # Install CUDA 9.0
+
 It is always desirable to read the [official Installation Guide for Linux](http://developer.download.nvidia.com/compute/cuda/9.0/Prod/docs/sidebar/CUDA_Installation_Guide_Linux.pdf) of the version of CUDA you want to install. In my case, the version is 9.0.
 
 1. Download a runfile(local) install file from the NVIDA homepage.
+
 ```bash
 sudo sh cuda_9.0.176_384.81_linux.run
 ```
+
 While running the file, you are asked to install the NVIDIA driver, CUDA toolkit, and example codes. The example codes are just optional. If you already installed a recent NVIDIA driver, the CUDA toolkit is the only thing you should install. Pick the default choices while running.
 
 ```bash
@@ -33,42 +40,51 @@ Do you want to install a symbolic link at /usr/local/cuda?
 
 Install the CUDA 9.0 Samples?
 (y)es/(n)o/(q)uit: n
-
 ```
 
 2. Set the enviroment variables `PATH` and `LD_LIBRARY_PATH`.
 
 **Method 1: Setting for a user environment**
+
 * Type `vim ~/.bashrc`. Add the following in the end of the file.
+
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
+
 * Type `vim ~/.bash_profile`. Add `source ~/.bashrc`.
 
 **Method 2: Setting in the Shell environment (Recommended!)**
+
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 **Method 3: Setting accross users**
+
 If you want the directories above to be added globally, add the variables to `/etc/environment`. `/usr/local/cuda-9.0/bin` to `PATH` and `/usr/local/cuda-9.0/lib64` to `LD_LIBRARY_PATH`.
 
 # Set environment variables for CUDA 9.0
+
 ```bash
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
+
 [Source](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions)
 
 # Install cuDNN v7.2
+
 Install cuDNN v7.2 for installing Tensorflow 1.7.
 
 Download 
+
 * `cuDNN v7.2.1 Runtime Library for Ubuntu16.04 (Deb)` 
 * `cuDNN v7.2.1 Developer Library for Ubuntu16.04 (Deb)`
 * `cuDNN v7.2.1 Code Samples and User Guide for Ubuntu16.04 (Deb)`
+
 from [this page](https://developer.nvidia.com/cudnn).
 
 ```bash
