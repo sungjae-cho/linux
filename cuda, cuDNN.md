@@ -7,12 +7,20 @@ nvcc --version
 cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2D
 ```
 # Install CUDA 9.0
-1. Download a deb install file from the NVIDA homepage.
+1. Download a runfile(local) install file from the NVIDA homepage.
 ```bash
-sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
-sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
-sudo apt-get update
-sudo apt-get install cuda
+sudo sh cuda_9.0.176_384.81_linux.run
+```
+While running the file, you are asked to install the NVIDIA driver, CUDA toolkit, and example codes. The example codes are just optional. If you already installed a recent NVIDIA driver, the CUDA toolkit is the only thing you should install. Pick the default choices while running.
+
+2. Add the CUDA binary directory to the enviroment variable `PATH`.
+```bash
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+```
+
+3. Add the CUDA library directory to the enviroment variable `LD_LIBRARY_PATH`.
+```bash
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 # Set environment variables for CUDA 9.0
