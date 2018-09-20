@@ -7,6 +7,8 @@ nvcc --version
 cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2D
 ```
 # Install CUDA 9.0
+It is always desirable to read the [official Installation Guide for Linux](http://developer.download.nvidia.com/compute/cuda/9.0/Prod/docs/sidebar/CUDA_Installation_Guide_Linux.pdf) of the version of CUDA you want to install. In my case, the version is 9.0.
+
 1. Download a runfile(local) install file from the NVIDA homepage.
 ```bash
 sudo sh cuda_9.0.176_384.81_linux.run
