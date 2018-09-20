@@ -25,6 +25,8 @@ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
+If you want the directories above to be added globally, add the variables to `/etc/environment`.
+
 # Set environment variables for CUDA 9.0
 ```bash
 export PATH=/usr/local/cuda-9.2/bin${PATH:+:${PATH}}
