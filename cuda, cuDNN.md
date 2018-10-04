@@ -81,15 +81,14 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 
 # Install cuDNN v7.2
 
-Install cuDNN v7.2 for installing Tensorflow 1.7.
+Install cuDNN v7.2 for installing Tensorflow 1.7. 
 
-Download 
+Open [this page](https://developer.nvidia.com/cudnn). First, click  'Download  cuDNN.' Second, login. Then, download the following files. 
 
 * `cuDNN v7.2.1 Runtime Library for Ubuntu16.04 (Deb)` 
 * `cuDNN v7.2.1 Developer Library for Ubuntu16.04 (Deb)`
 * `cuDNN v7.2.1 Code Samples and User Guide for Ubuntu16.04 (Deb)`
 
-from [this page](https://developer.nvidia.com/cudnn).
 
 ```bash
 sudo dpkg -i libcudnn7_7.2.1.38-1+cuda9.2_amd64.deb
