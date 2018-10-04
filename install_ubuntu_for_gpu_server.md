@@ -5,7 +5,11 @@ Preparing to install Ubuntu.
 Install type.
 * Select `Something else`, which means you can create or resize partitions yourself, or choose multiple partitions for Ubuntu.
 
-
+Select `free space`. Click the `+` button. And set the following.
+* Size: 1MB
+* Type for the new partition: Primary
+* Location for the new partition: Beggining of this space
+* Uses as: Reserved BIOS boot area
 
 Select `free space`. Click the `+` button. And set the following.
 * Size: 512MB
