@@ -52,6 +52,10 @@ Install the CUDA 9.0 Samples?
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
+* Then, type the following to run `.bashrc`.
+```bash
+source ~/.bashrc
+```
 
 * Type `vim ~/.bash_profile`. Add `source ~/.bashrc`.
 
