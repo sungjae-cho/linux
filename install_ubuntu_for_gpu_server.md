@@ -92,4 +92,51 @@ options nouveau modeset=0
 alias nouveau off
 alias lbm-nouveau off
 ```
+```bash
+echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveaukms.conf
+sudo update-initramfs -u
+reboot
+```
+`Ctrl+Alt+F1`. Then, login.
+```bash
+sudo service lightdm stop
+```
 
+Install nvidia driver with installing CUDA. 
+
+
+# Install CUDA 9.0
+
+It is always desirable to read the [official Installation Guide for Linux](http://developer.download.nvidia.com/compute/cuda/9.0/Prod/docs/sidebar/CUDA_Installation_Guide_Linux.pdf) of the version of CUDA you want to install. In my case, the version is 9.0.
+
+1. Download a runfile(local) install file from the NVIDA homepage.
+
+```bash
+sudo sh cuda_9.0.176_384.81_linux.run
+```
+
+While running the file, you are asked to install the NVIDIA driver, CUDA toolkit, and example codes. The example codes are just optional. If you already installed a recent NVIDIA driver, the CUDA toolkit is the only thing you should install. Pick the default choices while running.
+
+```bash
+Do you accept the previously read EULA?
+accept/decline/quit: accept
+
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?
+(y)es/(n)o/(q)uit: y
+
+???Something yes or default choice
+
+Install the CUDA 9.0 Toolkit?
+(y)es/(n)o/(q)uit: y
+
+Enter Toolkit Location
+ [ default is /usr/local/cuda-9.0 ]:
+
+Do you want to install a symbolic link at /usr/local/cuda?
+(y)es/(n)o/(q)uit: y
+
+Install the CUDA 9.0 Samples?
+(y)es/(n)o/(q)uit: n
+```
+
+2. Set the enviroment variables `PATH` and `LD_LIBRARY_PATH`.
