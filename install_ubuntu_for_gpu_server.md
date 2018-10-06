@@ -140,3 +140,10 @@ Install the CUDA 9.0 Samples?
 ```
 
 2. Set the enviroment variables `PATH` and `LD_LIBRARY_PATH`.
+
+3. Then, 
+```bash
+sudo apt-get install cuda 
+reboot
+```
+
