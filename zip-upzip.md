@@ -13,9 +13,9 @@ $ tar -czvf zip-file-name.tar.gz dir-to-zip
 2. Then, type the following command.
 
 ```bash
-$ tar -xzcf zip-file-name.tar.gz # for tar extension
+$ tar -xzvf zip-file-name.tar.gz # for tar extension
 ```
 
 ```bash
-$ unzip -xzcf zip-file-name.zip # for zip extension
+$ unzip zip-file-name.zip # for zip extension
 ```
