@@ -62,3 +62,10 @@ tar xvzf <file>.tgz
 ```sh
 source $HOME/.bashrc
 ```
+
+# Merge two directories
+```bash
+rsync -avhu --progress <source>/ <destination>/
+```
+[Reference](https://unix.stackexchange.com/questions/149965/how-to-copy-merge-two-directories)
+
