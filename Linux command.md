@@ -69,3 +69,9 @@ rsync -avhu --progress <source>/ <destination>/
 ```
 [Reference](https://unix.stackexchange.com/questions/149965/how-to-copy-merge-two-directories)
 
+# Remove a directory
+```bash
+rm -vrf <directory> # Delete the directory with visual procedure
+rm -rf <directory> # Delete the directory without visual procedure
+```
+```
