@@ -74,4 +74,3 @@ rsync -avhu --progress <source>/ <destination>/
 rm -vrf <directory> # Delete the directory with visual procedure
 rm -rf <directory> # Delete the directory without visual procedure
 ```
-```
