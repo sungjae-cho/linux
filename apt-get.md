@@ -12,3 +12,12 @@ sudo apt-get update
 ```bash
 sudo apt-get upgrade
 ```
+
+# 2. My packages
+```bash
+# Process usage viewer
+sudo apt-get install htop
+
+# Convert window text to unix text: This is necessary to convert text written in Windows inot text used in Unix.
+sudo apt-get install dos2unix
+```
