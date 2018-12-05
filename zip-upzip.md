@@ -17,5 +17,9 @@ $ tar -xzvf zip-file-name.tar.gz # for tar extension
 ```
 
 ```bash
+$ gzip -d zip-file-name.gz # for gz extension
+```
+
+```bash
 $ unzip zip-file-name.zip # for zip extension
 ```
