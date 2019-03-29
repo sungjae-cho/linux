@@ -16,6 +16,12 @@ python -m pip install --upgrade pip  # python 2
 python3 -m pip install --upgrade pip # python 3
 ```
 
+## 1.3. Install `Six`
+```
+sudo pip install --ignore-installed six # python 2
+sudo pip3 install --ignore-installed six # python 3
+```
+
 # 2. Install Juypter
 
 ## 2.1. Install Juypter
