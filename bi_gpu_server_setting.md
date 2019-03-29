@@ -10,8 +10,10 @@ sudo apt-get update
 
 ## 1.2. Install or update `pip` and `pip3`.
 ```
-sudo apt-get install python-pip	  # python 2
-sudo apt-get install python3-pip   # python 3
+sudo apt-get install python-pip	     # python 2
+sudo apt-get install python3-pip     # python 3
+python -m pip install --upgrade pip  # python 2
+python3 -m pip install --upgrade pip # python 3
 ```
 
 # 2. Install Juypter
