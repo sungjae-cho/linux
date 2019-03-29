@@ -16,12 +16,6 @@ python -m pip install --upgrade pip  # python 2
 python3 -m pip install --upgrade pip # python 3
 ```
 
-## 1.3. Install `Six`
-```
-sudo pip install --ignore-installed six # python 2
-sudo pip3 install --ignore-installed six # python 3
-```
-
 # 2. Install Juypter
 
 ## 2.1. Install Juypter
@@ -69,7 +63,13 @@ export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-## 3.3. Install `tensorflow-gpu` in version 1.4.1
+## 3.3. Ignore `six`
+```
+sudo pip install --ignore-installed six # python 2
+sudo pip3 install --ignore-installed six # python 3
+```
+
+## 3.4. Install `tensorflow-gpu` in version 1.4.1
 Version 1.4.1 is the lastest version of 1.4.
 ```
 sudo pip install tensorflow-gpu==1.4.1
@@ -78,7 +78,7 @@ sudo pip3 install tensorflow-gpu==1.4.1
 [Source](https://pypi.python.org/pypi/tensorflow-gpu/1.4.1)
 There is no address with [https://pypi.python.org/pypi/tensorflow-gpu/1.4.2](https://pypi.python.org/pypi/tensorflow-gpu/1.4.1).
 
-## 3.4. Check
+## 3.5. Check
 ```
 python
 >>> import tensorflow as tf
@@ -88,4 +88,10 @@ python
 python3
 >>> import tensorflow as tf
 >>> tf.__version__
+```
+
+# 4. Install other python libraries
+```
+sudo pip install pandas matplotlib
+sudo pip3 install pandas matplotlib
 ```
