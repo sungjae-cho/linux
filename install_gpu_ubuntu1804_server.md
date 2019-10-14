@@ -29,7 +29,7 @@ Select `free space`. And set the following.
 # Set static interent connection (optional).
 
 This step is usually required to use internet connection in university.
-Follow [this instruction]().
+Follow [this instruction](https://github.com/sungjae-cho/linux/blob/master/set_static_ip_ubuntu18.md).
 
 # Install the CUDA, its toolkit, and NVIDIA driver.
 
