@@ -1,4 +1,4 @@
-# Partitioning
+# Partition disks.
 
 Select `free space`. And set the following.
 * Size: 512MB
@@ -26,7 +26,7 @@ Select `free space`. And set the following.
 * Uses as: Ext4 journaling file system
 * Mount point: `/data`
 
-# Set static interent connection (optional)
+# Set static interent connection (optional).
 
 This step is usually required to use internet connection in university.
 Follow [this instruction]().
@@ -36,6 +36,6 @@ Follow [this instruction]().
 Follow the instructions given in [the NVIDIA homepage (CUDA Toolkit 10.1 Update 2 Download)](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal).
 Install the CUDA through **deb (local)** because the runfile installer may cause [this kind of errors](https://devtalk.nvidia.com/default/topic/1052676/runfile-installer-error-for-cuda-10-1-on-ubuntu-18-04/).
 
-# Set CUDA envirtonmental variables.
+# Setting CUDA envirtonmental variables.
 
 Read [this instruction](https://github.com/sungjae-cho/linux/blob/master/set_cuda_env_var.md).
