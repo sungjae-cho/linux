@@ -1,0 +1,3 @@
+```bash
+chown -R USERNAME:GROUPNAME /PATH/TO/FILE
+```
