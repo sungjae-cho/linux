@@ -110,3 +110,13 @@ make clean && make
 If you see `Test passed!`, then cuDNN should be installed properly.
 
 [Source](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#install-linux)
+
+
+# Install CUDA 10.1
+
+```bash
+sudo service lightdm stop
+sudo init 3
+sudo sh cuda_10.1.105_418.39_linux.run
+```
+
