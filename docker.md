@@ -31,6 +31,7 @@ Docker, container, image, cluster, containerization, virtual machine
 # Commands
 
 * `docker ps`: see a list of your running containers.
+* `docker cp <containerId>:/file/path/within/container /host/path/target`: Copying files from a docker container to a host. 
 
 
 # Install
