@@ -26,3 +26,8 @@ After execution, you can specify a port number and a password required to access
 jupyter lab # case 1: without root permission
 sudo juypter lab --allow-root # case 2: with root permission
 ```
+
+## Execute jupyter lab in a docker
+```
+jupyter lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
+```
