@@ -29,7 +29,7 @@ rsync -avz lesstif@example.com:/source/project_dir/source_dir/ /destination/proj
 
 ```bash
 --progress # Show the progress of each file
---progress --stats # Show the progress of the whole process
+--progress --stats # Show the statistics of the whole process
 ```
 
 ## References
